@@ -14,7 +14,7 @@ QGIS is one of many Geographic Information Systems (GIS) applications. It is an 
 
 The main interface will be similar to the one below, with the menu bar, toolbars and panels. The panels and toolbars can be dragged around the interface or docked to the sides.
 
-![QGIS main interface](/assets/images/qgis_main.png)
+![QGIS main interface]({{site.url}}/assets/images/qgis_main.png)
 
 ## Panels and Toolbars
 
@@ -44,17 +44,17 @@ You can go to ```View --> Panels``` or right-click any toolbar to add these pane
 
 * Drag the files into the Layers Panel. Alternatively, you can go to ```Layer --> Add Layer --> Vector Layer```. You can also use the ```Manage Layers Toolbar```.
 
-![add vector file](/assets/images/qgis-add-vector.png)<br/>
+![add vector file]({{site.url}}/assets/images/qgis-add-vector.png)<br/>
 * Under source, press the overflow icon (3 dots) to browse for the vector file.
 * Click ```Add```. Browse for the second file. Click ```Add```, click ```Close```.
 
 The files will appear in the Layers Panel.
 
-![layers panel](/assets/images/layers-panel.png)
+![layers panel]({{site.url}}/assets/images/layers-panel.png)
 
 ### About layers
 
-![layers](/assets/images/layers.jpg)<br/>
+![layers]({{site.url}}/assets/images/layers.jpg)<br/>
 In a GIS application, data are managed in layers stacked on each other, e.g. farmlands over the admin boundaries stacked on top of a basemap. The order of the layers will influence their visibility. The layers can be reordered by dragging them up and down in the ```Layers Panel```.
 
 * Reorder the layers so that ADM1 is above ADM0.
@@ -85,7 +85,7 @@ The attribute table displays the data in the vector file.
 
 * To open the attribute table, right-click the ```ADM1-simplified.shp``` layer and select ```Open Attribute Table```.
 
-![attribute table](/assets/images/attribute-table.png)
+![attribute table]({{site.url}}/assets/images/attribute-table.png)
 
 Notice that each feature is identified by a unique ID which is essential for any data storage application. From here you can see information for each boundary, including the parish names.
 
@@ -93,14 +93,14 @@ Notice that each feature is identified by a unique ID which is essential for any
 
 ### Identify features tool
 
-![identify features](/assets/images/identify-features-tool.png)
+![identify features]({{site.url}}/assets/images/identify-features-tool.png)
 
 The ```Identify Features Tool``` on the ```Attribute Toolbar``` will show data in the ```Identify Results``` panel for any selected feature.
 
 * Click the ```Identify Features Tool``` to enable it.
 * Click any parish to see the data in the ```Identify Results``` panel.
 
-![identify results](/assets/images/identify-results-panel.png)
+![identify results]({{site.url}}/assets/images/identify-results-panel.png)
 
 ## Adding raster data
 
@@ -116,7 +116,7 @@ The dataset contains several processed satellite images showing indices relating
 * Expand the ```dominica-sentinel``` group and activate the different raster layers to visualize them.
 * Save the project.
 
-![QGIS raster loaded](/assets/images/qgis-raster.png)
+![QGIS raster loaded]({{site.url}}/assets/images/qgis-raster.png)
 
 ### Raster file types
 
@@ -135,9 +135,9 @@ Notice that each raster layer is made up of 3 bands: red, green and blue. Raster
 * Click ```Apply``` and ```OK``` when finished.
 * Use the ```Identify Features``` tool to click on the map and view the results in the ```Identify Results``` panel.
 
-![raster symbology](/assets/images/raster-symbology.png)
+![raster symbology]({{site.url}}/assets/images/raster-symbology.png)
 
-![raster singleband pseudocolor](/assets/images/raster-pseudocolor.png)
+![raster singleband pseudocolor]({{site.url}}/assets/images/raster-pseudocolor.png)
 
 ### Area of interest
 
@@ -159,7 +159,7 @@ You will notice that the new raster has lost the pseudocolor styling from the or
 * Right-click the clipped raster layer and select ```Styles --> Paste Style```.
 * Be sure the disable the original layer.
 
-![raster extraction](/assets/images/raster-extraction.png)
+![raster extraction]({{site.url}}/assets/images/raster-extraction.png)
 
 ![clipped raster]({{site.url}}/assets/images/clipped-raster.png)
 

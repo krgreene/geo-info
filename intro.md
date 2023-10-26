@@ -33,13 +33,13 @@ GIS data fall into two categories:
 
 ### Vector data
 
-![roseau-vector](/assets/images/roseau-vector.png)<br/>
+![roseau-vector]({{site.url}}/assets/images/roseau-vector.png)<br/>
 In the vector model, features on the ground are represented as either points, lines or polygons.
 
-![points, lines, polygons](/assets/images/points-lines-polygons-vector-data-types.png)<br/>Credit:[earthdatascience.org](https://www.earthdatascience.org/courses/earth-analytics/spatial-data-r/intro-vector-data-r/)
+![points, lines, polygons]({{site.url}}/assets/images/points-lines-polygons-vector-data-types.png)<br/>Credit:[earthdatascience.org](https://www.earthdatascience.org/courses/earth-analytics/spatial-data-r/intro-vector-data-r/)
 
 
 ### Raster data
 
-![raster](/assets/images/raster.png) ![roseau-raster](/assets/images//roseau-raster.png)<br/>
+![raster]({{site.url}}/assets/images/raster.png) ![roseau-raster]({{site.url}}/assets/images//roseau-raster.png)<br/>
 The raster model uses a grid of cells where each cell represents an attribute of a feature. Think of an image which is made up of cells called pixels. A point can be represented as a pixel while lines and polygons would be sets of adjacent pixels. Scanned maps and satellite images are examples of raster data.
