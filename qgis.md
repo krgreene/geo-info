@@ -161,6 +161,6 @@ You will notice that the new raster has lost the pseudocolor styling from the or
 
 ![raster extraction](/assets/images/raster-extraction.png)
 
-![clipped raster](/assets/images/clipped-raster.png)
+![clipped raster]({{site.url}}/assets/images/clipped-raster.png)
 
 Next, we will create a map layout for printing.
