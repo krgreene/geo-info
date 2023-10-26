@@ -14,7 +14,7 @@ QGIS is one of many Geographic Information Systems (GIS) applications. It is an 
 
 The main interface will be similar to the one below, with the menu bar, toolbars and panels. The panels and toolbars can be dragged around the interface or docked to the sides.
 
-![QGIS main interface](/images/qgis_main.png)
+![QGIS main interface](/assets/images/qgis_main.png)
 
 ## Panels and Toolbars
 
@@ -44,17 +44,17 @@ You can go to ```View --> Panels``` or right-click any toolbar to add these pane
 
 * Drag the files into the Layers Panel. Alternatively, you can go to ```Layer --> Add Layer --> Vector Layer```. You can also use the ```Manage Layers Toolbar```.
 
-![add vector file](/images/qgis-add-vector.png)<br/>
+![add vector file](/assets/images/qgis-add-vector.png)<br/>
 * Under source, press the overflow icon (3 dots) to browse for the vector file.
 * Click ```Add```. Browse for the second file. Click ```Add```, click ```Close```.
 
 The files will appear in the Layers Panel.
 
-![layers panel](/images/layers-panel.png)
+![layers panel](/assets/images/layers-panel.png)
 
 ### About layers
 
-![layers](/images/layers.jpg)<br/>
+![layers](/assets/images/layers.jpg)<br/>
 In a GIS application, data are managed in layers stacked on each other, e.g. farmlands over the admin boundaries stacked on top of a basemap. The order of the layers will influence their visibility. The layers can be reordered by dragging them up and down in the ```Layers Panel```.
 
 * Reorder the layers so that ADM1 is above ADM0.
@@ -85,7 +85,7 @@ The attribute table displays the data in the vector file.
 
 * To open the attribute table, right-click the ```ADM1-simplified.shp``` layer and select ```Open Attribute Table```.
 
-![attribute table](/images/attribute-table.png)
+![attribute table](/assets/images/attribute-table.png)
 
 Notice that each feature is identified by a unique ID which is essential for any data storage application. From here you can see information for each boundary, including the parish names.
 
@@ -93,14 +93,14 @@ Notice that each feature is identified by a unique ID which is essential for any
 
 ### Identify features tool
 
-![identify features](/images/identify-features-tool.png)
+![identify features](/assets/images/identify-features-tool.png)
 
 The ```Identify Features Tool``` on the ```Attribute Toolbar``` will show data in the ```Identify Results``` panel for any selected feature.
 
 * Click the ```Identify Features Tool``` to enable it.
 * Click any parish to see the data in the ```Identify Results``` panel.
 
-![identify results](/images/identify-results-panel.png)
+![identify results](/assets/images/identify-results-panel.png)
 
 ## Adding raster data
 
@@ -116,7 +116,7 @@ The dataset contains several processed satellite images showing indices relating
 * Expand the ```dominica-sentinel``` group and activate the different raster layers to visualize them.
 * Save the project.
 
-![QGIS raster loaded](/images/qgis-raster.png)
+![QGIS raster loaded](/assets/images/qgis-raster.png)
 
 ### Raster file types
 
@@ -135,8 +135,32 @@ Notice that each raster layer is made up of 3 bands: red, green and blue. Raster
 * Click ```Apply``` and ```OK``` when finished.
 * Use the ```Identify Features``` tool to click on the map and view the results in the ```Identify Results``` panel.
 
-![raster symbology](/images/raster-symbology.png)
+![raster symbology](/assets/images/raster-symbology.png)
 
-![raster singleband pseudocolor](/images/raster-pseudocolor.png)
+![raster singleband pseudocolor](/assets/images/raster-pseudocolor.png)
 
-Next, we will create a map layout.
+### Area of interest
+
+The extent of the raster is larger than the island. We do not need the ocean area in the image so we'll clip it to coasts of Dominica. For this process we'll use the raster image and clip it using the ```ADM0.shp``` file.
+
+* From the menu bar, select ```Raster --> Extraction --> Clip Raster by Mask Layer```.
+* Select the ```Moisture_index.tiff``` as the ```Input Layer```.
+* Select the ```ADM0-simplified.shp``` file as the ```Mask Layer```.
+* Set the nodata value to 0.
+* Select ```Match the extent of the clipped raster...``` and ```Keep resolution of the input raster```.
+* By default, the output is saved to a temporary file. Saved the clipped mask as ```dominica_moisture-index.tif``` to your project folder.
+* Click ```Run``` to generate the output raster, then ```Close```.
+
+### Copying styles
+
+You will notice that the new raster has lost the pseudocolor styling from the original and has defaulted to the multiband color. To fix this, copy the style from the original layer.
+
+* Right-click the ```Moisture_index.tiff``` layer and select ```Styles --> Copy Style```.
+* Right-click the clipped raster layer and select ```Styles --> Paste Style```.
+* Be sure the disable the original layer.
+
+![raster extraction](/assets/images/raster-extraction.png)
+
+![clipped raster](/assets/images/clipped-raster.png)
+
+Next, we will create a map layout for printing.
