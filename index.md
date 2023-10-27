@@ -20,14 +20,14 @@ The course will introduce the following topics:
 * Geodatabases
 * Spatial analysis and visualization
 
-Details of each topic are shown below:
+<!-- Details of each topic are shown below:
 
 |Day | Topics | Activities | Outcomes |
 | 1 | Introduction | Introduction to QGIS interface, GIS data models and structures | Participants are familiar with QGIS interface and key tools, can load and interact with vector/raster data, change symbology, open attribute table, create layouts and print maps. |
 | 2 | Capturing/creating data | On-screen digitizing | Participants are able to digitize features from scanned map and Google Earth (convert between kml/kmz/shapefile), import GPS data to shapefile, update attribute table, convert between raster and vector data. |
 | 3 | Project and reproject data |  Participants are able to identify the coordinate system of a layer, distinguish between GCS and PCS, assign and transform coordinate systems to a layer and georeference an image. |
 | 4 | Geodatabases |  Create and populate geodatabases | Participants understand key concepts of relational databases and are able to create, populate and edit geodatabases. |
-| 5 | Spatial analysis and visualization | Undertake basic spatial analysis | Participants understand the main categories of spatial analysis, are able to design analytical steps to solve a spatial problem using vector or raster data and visualize the analytical output.
+| 5 | Spatial analysis and visualization | Undertake basic spatial analysis | Participants understand the main categories of spatial analysis, are able to design analytical steps to solve a spatial problem using vector or raster data and visualize the analytical output. -->
 
 # Software requirements
 * Windows 10 or 11 environment.

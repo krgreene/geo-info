@@ -6,6 +6,24 @@ parent: Introduction to GIS
 nav_order: 1
 ---
 
+On this page:
+
+[Introduction to QGIS](#introduction-to-qgis)<br/>
+[Panels and Toolbars](#panels-and-toolbars)<br/>
+[Creating/Saving a projec](#creatingsaving-a-project)<br/>
+[Adding vector data](#adding-vector-data)<br/>
+[About layers](#about-layers)<br/>
+[Vector file types](#vector-file-types)<br/>
+[Styling vector layers](#styling-vector-layers)<br/>
+[Attribute table](#attribute-table)<br/>
+[Identify features tool](#identify-features-tool)<br/>
+[Adding raster data](#adding-raster-data)<br/>
+[Raster file types](#raster-file-types)<br/>
+[Styling raster layers](#styling-raster-layers)<br/>
+[Area of interest](#area-of-interest)<br/>
+[Copying styles](#copying-styles)<br/>
+
+
 # Introduction to QGIS
 
 QGIS is one of many Geographic Information Systems (GIS) applications. It is an opensource software that is free to use and has several plugins to improve functionality.
@@ -44,7 +62,7 @@ You can go to ```View --> Panels``` or right-click any toolbar to add these pane
 
 * Drag the files into the Layers Panel. Alternatively, you can go to ```Layer --> Add Layer --> Vector Layer```. You can also use the ```Manage Layers Toolbar```.
 
-![add vector file]({{site.url}}/assets/images/qgis-add-vector.png)<br/>
+<!-- ![add vector file]({{site.url}}/assets/images/qgis-add-vector.png)<br/> -->
 * Under source, press the overflow icon (3 dots) to browse for the vector file.
 * Click ```Add```. Browse for the second file. Click ```Add```, click ```Close```.
 
@@ -108,7 +126,7 @@ The ```Identify Features Tool``` on the ```Attribute Toolbar``` will show data i
 
 [Sentinel images zip file](/files/dominica-sentinel.zip)
 
-The dataset contains several processed satellite images showing indices relating to moisture and vegetation health.
+The dataset contains processed satellite images showing indices relating to moisture and vegetation health.
 
 * Use the ```Browser Panel``` to locate the downloaded file.
 * Drag the file from the ```Browser Panel``` to the ```Layers Panel```. Alternatively, you can go to ```Layer --> Add Layer --> Raster Layer```. You can also use the ```Manage Layers Toolbar```.
@@ -137,7 +155,7 @@ Notice that each raster layer is made up of 3 bands: red, green and blue. Raster
 
 ![raster symbology]({{site.url}}/assets/images/raster-symbology.png)
 
-![raster singleband pseudocolor]({{site.url}}/assets/images/raster-pseudocolor.png)
+<!-- ![raster singleband pseudocolor]({{site.url}}/assets/images/raster-pseudocolor.png) -->
 
 ### Area of interest
 
@@ -158,9 +176,11 @@ You will notice that the new raster has lost the pseudocolor styling from the or
 * Right-click the ```Moisture_index.tiff``` layer and select ```Styles --> Copy Style```.
 * Right-click the clipped raster layer and select ```Styles --> Paste Style```.
 * Be sure the disable the original layer.
+* Re-order the layers to show the details you want.
+* Save your project.
 
-![raster extraction]({{site.url}}/assets/images/raster-extraction.png)
+<!-- ![raster extraction]({{site.url}}/assets/images/raster-extraction.png) -->
 
-![clipped raster]({{site.url}}/assets/images/clipped-raster.png)
+<!-- ![clipped raster]({{site.url}}/assets/images/clipped-raster.png) -->
 
 Next, we will create a map layout for printing.
