@@ -42,4 +42,4 @@ In the vector model, features on the ground are represented as either points, li
 ### Raster data
 
 ![raster]({{site.url}}/assets/images/raster.png) ![roseau-raster]({{site.url}}/assets/images//roseau-raster.png)<br/>
-The raster model uses a grid of cells where each cell represents an attribute of a feature. Think of an image which is made up of cells called pixels. A point can be represented as a pixel while lines and polygons would be sets of adjacent pixels. Scanned maps and satellite images are examples of raster data.
+The raster model uses a grid of cells where each cell represents an attribute of a feature. Think of an image which is made up of cells called pixels. A point can be represented as a pixel, while lines and polygons would be sets of adjacent pixels. Scanned maps and satellite images are examples of raster data.
