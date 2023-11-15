@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Digitizing
-permalink: /qgis2
-# parent: Introduction to GIS
+permalink: /digitizing
 nav_order: 3
 ---
 
@@ -32,12 +31,12 @@ Google Earth has both desktop and online versions. For simplicity, we will use t
 * Name the file.
 * On the left, under ```Local KML files```, go to the current project and click the option icon (3 dots). Select ```Export as KML file```. This will download the file to your computer.
 
----
+-----
 
 * Try using placemarks instead of polygons to mark points on the map.
 * Download the KML file.
 
----
+-----
 
 * Open the files in QGIS (drag them to the ```Layers Panel``` or add a vector layer).
 
