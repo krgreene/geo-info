@@ -7,8 +7,8 @@ nav_order: 4
 
 On this page:
 
-[Convert vector to raster (rasterize)](#convert-vector-to-raster-rasterize)<br/>
-[Convert raster to vector (vectorize)](#convert-raster-to-vector-vectorize)
+* TOC
+{:toc}
 
 # Converting vector and raster data
 

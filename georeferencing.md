@@ -7,8 +7,8 @@ nav_order: 5
 
 On this page:
 
-[Setting Project CRS](#setting-project-crs)<br/>
-[Georeferencing](#georeferencing)
+* TOC
+{:toc}
 
 # Georeferencing
 
@@ -17,11 +17,13 @@ On this page:
 * ```Project --> Properties --> CRS```. 
 * Search for the CRS of interest (e.g. WGS 84) and Apply. 
 
-![Georeferencer]({{site.url}}/assets//images/georeferencer.png)
+<!-- ![Georeferencer]({{site.url}}/assets//images/georeferencer.png) -->
 
 ## Georeferencing
 
-Set project CRS. Open the georeferencer tool:
+* Set the project CRS. 
+
+Open the georeferencer tool:
 
 * On menu bar, go to ```Layer --> Georeferencer```.
 * In the resulting ```Georeferencer``` window, go to ```File --> Open Raster``` and browse to add the image or layer to be georeferenced.

@@ -7,11 +7,8 @@ nav_order: 3
 
 On this page:
 
-[Digitizing features and editing attributes](#digitizing-features-and-editing-attributes)<br/>
-[Digitizing in Google Earth](#digitizing-in-google-earth)<br/>
-[Convert KML/KMZ to Shapefile](#convert-kmlkmz-to-shapefile)<br/>
-[Digitizing scanned maps in QGIS](#digitizing-scanned-maps-in-qgis)<br/>
-[Updating the Attribute Table](#updating-the-attribute-table)
+* TOC
+{:toc}
 
 # Digitizing features and editing attributes
 
@@ -50,7 +47,7 @@ Google Earth has both desktop and online versions. For simplicity, we will use t
 
 The new shapefile will show in the ```Layers Panel```.
 
-## Digitizing scanned maps in QGIS
+## Digitizing scanned maps/rasters in QGIS
 * Load the file into the ```Layers Panel```.
 * On the menu bar, go to ```Layer --> Create Layer --> New Shapefile Layer...```.
 * Name the file to save the layer to.
@@ -65,7 +62,7 @@ The new shapefile will show in the ```Layers Panel```.
 * Enter the feature details when prompted.
 * On the ```Digitizing Toolbar```, click ```Save Layer Edits```.
 
-The Layer will need to be geo-referenced to appear correctly within the country map.
+The Layer will need to be [georeferenced]({{site.url}}/georeferencing) to appear correctly within the country map.
 
 ## Updating the Attribute Table in QGIS
 You may need to add fields and data to a vector layer's attribute table. You can add and delete fields, edit data and perform various operations, using the attribute table's menu. To add a new field and data:

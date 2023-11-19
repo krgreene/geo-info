@@ -7,6 +7,8 @@ nav_order: 7
 
 On this page:
 
+* TOC
+{:toc}
 
 # Spatial Analysis
 
@@ -140,14 +142,14 @@ The estimated yield of each main crop for each farm is provided in the last colu
 
 * Make a definition query to select female farmers who grow ```dasheen```. Your query should look like this: ```"Sex"  =   'F' AND  "MainCrop"```. The query result can also be used to answer the question which female farmer has the largest/smallest area of dasheen.
 
-# Generate group statistics
+## Generate group statistics
 
 * Search again for ```stat``` in the ```Processing Toolbox``` and choose ```statistics by category```. 
 * In the resulting dialog, choose the newly created join layer as input layer; choose the estimated yield as the field to calculate statistics on (this should be numeric). 
 * Click on the dots next to the box for ```Field(s) with categories``` and tick ```maincrop``` and ```sex```. Click ```Run```. The output would be seen in the Layers panel as a table. Right-click on it ````--> Open Attribute Table```` and view the result, which shows estimated yield statistics by sex and main crop. The count field is the same as frequency. * To save the temporary group statistics layer, right-click and choose make permanent (or export). 
 * Save your project.
 
-# Fix geometry and count points in polygon
+## Fix geometry and count points in polygon
 
 Some polygon datasets have geometry errors that might only show up during geoprocessing such as overlay. Here, we want to count the number of farms in a given soil class or attributes. We will use the ```Farm centroids layer```. 
 Add the ```lsd_soil shapefile```. Familiarize yourself with the attribute table. In the ```Processing Toolbox```, search for ```point``` and choose ```Count points in polygon``` under the ```Vector analysis``` item.  

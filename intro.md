@@ -7,6 +7,11 @@ has_children: True
 has_toc: False
 ---
 
+On this page:
+
+* TOC
+{:toc}
+
 # Introduction to GIS
 
 Geographic Information Systems (GIS) refers to the technology used for the effective collection, storage, retrieval, processing and display of geospatial data. These data may include:

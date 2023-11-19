@@ -8,21 +8,8 @@ nav_order: 1
 
 On this page:
 
-[Introduction to QGIS](#introduction-to-qgis)<br/>
-[Panels and Toolbars](#panels-and-toolbars)<br/>
-[Creating/Saving a projec](#creatingsaving-a-project)<br/>
-[Adding vector data](#adding-vector-data)<br/>
-[About layers](#about-layers)<br/>
-[Vector file types](#vector-file-types)<br/>
-[Styling vector layers](#styling-vector-layers)<br/>
-[Attribute table](#attribute-table)<br/>
-[Identify features tool](#identify-features-tool)<br/>
-[Adding raster data](#adding-raster-data)<br/>
-[Raster file types](#raster-file-types)<br/>
-[Styling raster layers](#styling-raster-layers)<br/>
-[Area of interest](#area-of-interest)<br/>
-[Copying styles](#copying-styles)<br/>
-[Labels](#adding-labels)
+* TOC
+{:toc}
 
 # Introduction to QGIS
 
