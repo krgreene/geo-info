@@ -14,10 +14,5 @@ _site/
 .bundle/
 vendor/
 
-# Ignore converted PDFs.
 
-# *.pdf
-
-# Ignore .py files.
-*.py
 
