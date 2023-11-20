@@ -108,7 +108,7 @@ The ```Identify Features Tool``` on the ```Attribute Toolbar``` will show data i
 
 * Download the following file to your project folder:
 
-[Sentinel moisture index image]({{sitye.url}}/assets/files/moisture-index.tiff)
+[Sentinel moisture index image]({{site.url}}/assets/files/moisture-index.tiff)
 <!-- [Sentinel moisture index image](D:\OneDrive - The University of the West Indies\Agri-geo-informatics\GIS\geo-info\assets\images\moisture-index.tiff) -->
 
 * Use the ```Browser Panel``` to locate the downloaded file ```moisture-index.tiff```.
