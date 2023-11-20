@@ -41,7 +41,7 @@ GIS data fall into two categories:
 ![roseau-vector]({{site.url}}/assets/images/roseau-vector.png)<br/>
 In the vector model, features on the ground are represented as either points, lines or polygons.
 
-![points, lines, polygons]({{site.url}}/assets/images/points-lines-polygons-vector-data-types.png)<br/>Credit:[earthdatascience.org](https://www.earthdatascience.org/courses/earth-analytics/spatial-data-r/intro-vector-data-r/)
+![points, lines, polygons]({{site.url}}/assets/images/points-lines-polygons-vector-data-types.png)<br/>Credit: [earthdatascience.org](https://www.earthdatascience.org/courses/earth-analytics/spatial-data-r/intro-vector-data-r/)
 
 
 ### Raster data

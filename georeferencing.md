@@ -12,6 +12,8 @@ On this page:
 
 # Georeferencing
 
+[Download topographic map]({{site.url}}/assets/files/large-detailed-topographic-map-of-dominica.jpg){:download="topographic_map"}
+
 ## Setting Project CRS:
 
 * ```Project --> Properties --> CRS```. 

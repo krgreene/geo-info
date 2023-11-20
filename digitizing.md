@@ -18,7 +18,7 @@ Digitizing is the process of capturing areas of rasters (scanned maps, satellite
 
 Google Earth has both desktop and online versions. For simplicity, we will use the online version.
 
-* In your web browser (Edge/Chrome) go to [earth.google.com](https://earth.google.com)
+* In your web browser (Edge/Chrome) go to [earth.google.com](https://earth.google.com){:target="_blank"}
 * Drag and zoom the map to Dominica.
 * Find an area of interest you wish to capture. Zoom in to this area.
 * Click on the ```Add path or polygon``` icon at the top of the page.
@@ -48,10 +48,15 @@ Google Earth has both desktop and online versions. For simplicity, we will use t
 The new shapefile will show in the ```Layers Panel```.
 
 ## Digitizing scanned maps/rasters in QGIS
+
+[Download topographic map]({{site.url}}/assets/files/large-detailed-topographic-map-of-dominica.jpg){:download="topographic_map"}
+
+The Layer will need to be [georeferenced]({{site.url}}/georeferencing) to appear correctly within the country map.
+
 * Load the file into the ```Layers Panel```.
 * On the menu bar, go to ```Layer --> Create Layer --> New Shapefile Layer...```.
 * Name the file to save the layer to.
-* Set the ```Geometry type``` to ```Polygon``` to digitize an area. Point features can be digitized as ```Point``` or ```MultiPoint```. Linear features such as paths and boundaries may be dighitized as ```LineString```.
+* Set the ```Geometry type``` to ```Polygon``` to digitize an area. Point features can be digitized as ```Point``` or ```MultiPoint```. Linear features such as paths and boundaries may be digitized as ```LineString```.
 * Notice that the ```Fields List``` already has an integer ```id``` to identify each unique feature. Under ```New Field```, add a new ```string``` field for the name of the area to be digitized.
 * Click ```OK``` when you are finished.
 * Ensure the ```Digitizing Toolbar``` is active.
@@ -62,7 +67,6 @@ The new shapefile will show in the ```Layers Panel```.
 * Enter the feature details when prompted.
 * On the ```Digitizing Toolbar```, click ```Save Layer Edits```.
 
-The Layer will need to be [georeferenced]({{site.url}}/georeferencing) to appear correctly within the country map.
 
 ## Updating the Attribute Table in QGIS
 You may need to add fields and data to a vector layer's attribute table. You can add and delete fields, edit data and perform various operations, using the attribute table's menu. To add a new field and data:
