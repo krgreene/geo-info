@@ -91,3 +91,21 @@ You may need to add fields and data to a vector layer's attribute table. You can
 * Click ```OK``` when done.
 * Enter the desired data into the new field of the attribute table.
 * Click the ```Save edits``` icon.
+
+## Adding data from GPS devices
+
+[Download GPS data]({{site.url}}/assets/files/FarmCoordinatesCSV.csv)
+​
+Add XY Data (GPS Data):
+
+* Go to ```Layer menu --> Add --> Add Delimited Text Layer```. 
+* Set the following:
+
+Input = ```FarmCoordCSV``` file.       
+Specify the output Name and Location.<br/>
+X and Y fields = ```Xcoord``` and ```Ycoord```, respectively.<br/>
+CRS = CRS of the Farmcentroids layer (```EPSG 2002: Dominica 1945 / British West Indies Grid```).<br/> 
+Geometry Definition = Point coordinates. 
+
+* Click ```OK``` to finish the import. 
+* Export the temporary XY event layer to a shapefile. 

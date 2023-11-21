@@ -42,6 +42,8 @@ The course will introduce the following topics:
 
 ## Useful geo-data sources
 
+[Dominica's public Geographic Information System (GIS) repository](https://dominode.dm/){:target="_blank"}
+
 [The Humanitarian Data Exchange](https://data.humdata.org/){:target="_blank"}
 
 [ArcGIS Hub](https://hub.arcgis.com/){:target="_blank"}
