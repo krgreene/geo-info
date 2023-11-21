@@ -64,7 +64,7 @@ Digitizing can be done on the web map by following the procedure below. Georefer
 
 ## Digitizing scanned maps/rasters in QGIS
 
-[Download topographic map]({{site.url}}/assets/files/large-detailed-topographic-map-of-dominica.jpg){:download="topographic_map"}
+[Download topographic map]({{site.url}}/assets/files/topographic-map.jpg){:download="topographic_map"}
 
 The Layer will need to be [georeferenced]({{site.url}}/georeferencing) to appear correctly within the country map.
 
