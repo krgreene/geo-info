@@ -47,6 +47,21 @@ Google Earth has both desktop and online versions. For simplicity, we will use t
 
 The new shapefile will show in the ```Layers Panel```.
 
+## Plugins: Using web maps
+
+QGIS uses plugins to add functionality to the software. One such plugin is QuickMapServices which allows basemaps from Google and other services to be loaded directly in the software.
+
+To install a plugin:
+
+* On the menu bar, go to ```Plugins --> Manage and Install Plugins...```.
+* Search for and install the ```QuickMapServices``` plugin.
+
+To load Google Maps:
+
+* On the menu bar, go to ```Web --> QuickMapServices --> Google --> Google Hybrid```. The Google hybrid map will be added to the ```Layers Panel```.
+
+Digitizing can be done on the web map by following the procedure below. Georeferencing is not needed.
+
 ## Digitizing scanned maps/rasters in QGIS
 
 [Download topographic map]({{site.url}}/assets/files/large-detailed-topographic-map-of-dominica.jpg){:download="topographic_map"}

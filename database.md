@@ -1,9 +1,9 @@
-<!-- ---
-layout: page
-title: Geodatabase
-permalink: /database
-nav_order: 6
---- -->
+---
+# layout: page
+# title: Geodatabase
+# permalink: /database
+# nav_order: 6
+---
 
 On this page:
 

@@ -1,9 +1,9 @@
-<!-- ---
-layout: page
-title: Spatial Analysis
-permalink: /spatial_analysis
-nav_order: 7
---- -->
+---
+# layout: page
+# title: Spatial Analysis
+# permalink: /spatial_analysis
+# nav_order: 7
+---
 
 On this page:
 
@@ -12,7 +12,9 @@ On this page:
 
 # Spatial Analysis
 
-![landuse layer]()
+Download the zip file and extract the contents to your project folder.
+
+[Download datasets]({{site.url}}/assets/files/datasets.zip)
 
 ## Extracting features by attribute
 

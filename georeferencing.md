@@ -12,7 +12,7 @@ On this page:
 
 # Georeferencing
 
-[Download topographic map]({{site.url}}/assets/files/large-detailed-topographic-map-of-dominica.jpg){:download="topographic_map"}
+[Download topographic map]({{site.url}}/assets/files/topographic-map.jpg){:download="topographic_map"}
 
 ## Setting Project CRS:
 
@@ -41,6 +41,17 @@ Now set the georeferencing transformation settings in the ```Georeferencer``` wi
 * In the ```Georeferencer``` window, click the ```Add Point``` tool on the toolbar and click the location for the first GCP. The ```Enter Map Coordinates``` dialog opens. 
 * Enter the X and Y values for the GCP and press ```OK``` (ensuring that the CRS is the same as specified earlier). 
 * Continue to place other GCPs following the same procedure.
+
+**Supporting data:**
+
+[View GCPs map]({{site.url}}/assets/files/gcps.jpg){:target="_blank"}
+
+GCP information:
+
+**Label** | **Description** | **Lon** | **Lat** 
+0 | Junction of Granby St & Bay St (Portsmouth) | -61.455949 | 15.573490 
+1 | Junction of Castle Bruce Rd & East Coast Rd | -61.259719 | 15.434244 
+2 | T-Junction on Goodwill Rd | -61.388860 | 15.315476 
 
 ---
 

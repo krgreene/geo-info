@@ -17,6 +17,7 @@ This course introduces you to Geographic Information Systems (GIS) using QGIS.
 Strategic and operational management of national agriculture requires several spatial datasets. Integration of the varied datasets in a spatial database permits easy data management and analysis to support decision making. Geographic Information System (GIS) software provides a framework to support spatial data collection, management and analysis. This training manual introduces theoretical concepts and practical activities that reinforce understanding of agricultural spatial data management and analysis.
 
 ## Topics
+
 The course will introduce the following topics:
 * Introduction to GIS
 * Capturing and creating data
@@ -34,6 +35,18 @@ The course will introduce the following topics:
 | 5 | Spatial analysis and visualization | Undertake basic spatial analysis | Participants understand the main categories of spatial analysis, are able to design analytical steps to solve a spatial problem using vector or raster data and visualize the analytical output. -->
 
 ## Software requirements
+
 * Windows 10 or 11 environment.
 * QGIS 3.28 LTR 'Firenze' available at this link [https://qgis.org/en/site/forusers/download.html](https://qgis.org/en/site/forusers/download.html)
 * Datasets for the course are available for download on each topic page.
+
+## Useful geo-data sources
+
+[The Humanitarian Data Exchange](https://data.humdata.org/){:target="_blank"}
+
+[ArcGIS Hub](https://hub.arcgis.com/){:target="_blank"}
+
+<!-- ## File upload
+
+[Upload your maps and other output files here.](https://theuwi-my.sharepoint.com/:f:/g/personal/20006608_cavehill_uwi_edu/ElKU_5tX4uhKlczax-N8P3IB7wTOpCZCV1aZYLazyxpXpA){:target="_blank"} -->
+
