@@ -1,8 +1,8 @@
 ---
-# layout: page
-# title: Spatial Analysis
-# permalink: /spatial_analysis
-# nav_order: 7
+layout: page
+title: Spatial Analysis
+permalink: /spatial_analysis
+nav_order: 7
 ---
 
 On this page:

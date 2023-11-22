@@ -107,7 +107,7 @@ Add XY Data (GPS data):
 
 > X and Y fields = ```Xcoord``` and ```Ycoord```, respectively.
 
-> CRS = CRS of the Farmcentroids layer (```EPSG 2002: Dominica 1945 / British West Indies Grid```).
+> CRS = ```EPSG 2002: Dominica 1945 / British West Indies Grid```.
 
 > Geometry Definition = Point coordinates. 
 

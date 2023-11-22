@@ -1,8 +1,8 @@
 ---
-# layout: page
-# title: Geodatabase
-# permalink: /database
-# nav_order: 6
+layout: page
+title: Geodatabase
+permalink: /database
+nav_order: 6
 ---
 
 On this page:
@@ -63,9 +63,58 @@ This statement reads as 'select all data from the table Farms that match the pro
 
 QGIS can connect to and retrieve data from existing external databases. So if you have a PostgreSQL or other compatible database, QGIS can link with this database to perform spatial analysis. The ```Browser Panel``` provides built in functions for compatible databases. The GeoPackage is another convenient file type for creating a local database which can be easily shared. The GeoPackage can also be queried with SQL statements.
 
-We will create, edit and query a GeoPackage.
+We will create, edit and query databases and integrate with QGIS.
 
-## Creating a simple database
+## Creating a geopackage database
 
-* In the ```Browser Panel```, right-click ```GeoPackage``` and select ```Create Database...```.
-* Save the database.
+Geopackages are spatial database files which can store a variety of data associated with a project. We will save the project, layers and associated styles to a geopackage.
+
+In QGIS, create a new project.
+
+[Download and extract estates and soils vectors zip file]({{site.url}}/assets/files/estates_and_soils.zip)
+
+* Rename the layers to estates and soils respectively.
+* Apply a categorized symbology with random colors to each layer.
+
+Package the layers:
+
+* In the ```Processing Panel```, search for ```package``` and open ```Package layers```.
+* Add the 2 layers, saving the style and metadata.
+* Save the file.
+
+Connect to the geopackage:
+
+* In the ```Browser Panel```, right-click ```GeoPackage``` and select ```New connection...```
+* Browse and connect to the geopackage.
+
+Load the geopackage layers:
+
+* Remove the original layers from the ```Layers Panel```.
+* Add the layers from the geopackage. Notice they have kept all formatting.
+
+Saving the project to the geopackage:
+
+* Go to ```File --> Save to --> GeoPackage...``` and select the geopackage.
+* Complete the dialog box.
+
+* Close the project
+
+## Opening a project saved in a geopackage
+
+* Go to ```Project --> Open from --> GeoPackage...```
+
+## Spatial queries
+
+Apart from regular SQL queries, spatial databases allow special spatial queries such as proximity of features or whether they overlap. We will execute SQL queries on the geopackage layers.
+
+* In the ```Browser Panel```, expand the geopackage.
+* Right-click the ```estates``` layer and select ```Layer Properties...``` to preview the associated data.
+* Close the dialog box.
+* Right-click the ```estates``` layer and select ```Execute SQL...```.
+* Execute the following SQL query:
+> ```SELECT * FROM estates WHERE estate_typ = "Large Estates";```
+* Load the result to visualize it.
+
+## Working with POSTGIS
+
+Go to https://www.alwaysdata.com/en/
