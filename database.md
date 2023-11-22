@@ -91,6 +91,7 @@ Load the geopackage layers:
 
 * Remove the original layers from the ```Layers Panel```.
 * Add the layers from the geopackage. Notice they have kept all formatting.
+* Check the source to confirm that they came from the geopackage.
 
 Saving the project to the geopackage:
 
@@ -115,6 +116,16 @@ Apart from regular SQL queries, spatial databases allow special spatial queries 
 > ```SELECT * FROM estates WHERE estate_typ = "Large Estates";```
 * Load the result to visualize it.
 
+* Execute the following SQL query:
+> ```SELECT * FROM estates
+JOIN soils
+ON ST_EnvIntersects(estates.geom, soils.geom) 
+WHERE estates.estate_typ = "Large Estates" AND soils.type = "Kandoid latosols";```
+
+* Load the result to visualize it.
+
+
+
 ## Working with POSTGIS
 
-Go to https://www.alwaysdata.com/en/
+Go to [https://www.alwaysdata.com/en/](https://www.alwaysdata.com/en/){:target="_blank"}
