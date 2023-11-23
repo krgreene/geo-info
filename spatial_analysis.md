@@ -144,12 +144,12 @@ In the new layer with the join fields, you have average yield of the main crops.
 
 The estimated yield of each main crop for each farm is provided in the last column. 
 
-* Make a definition query to select female farmers who grow ```dasheen```. Your query should look like this: ```"Sex"  =   'F' AND  "MainCrop"```. The query result can also be used to answer the question which female farmer has the largest/smallest area of dasheen.
+* Make a definition query to select female farmers who grow ```dasheen```. Your query should look like this: ```"Sex"  =   'F' AND  "MainCrop" = 'dasheen'```. The query result can also be used to answer the question which female farmer has the largest/smallest area of dasheen.
 
 ## Generate group statistics
 
 * Search again for ```stat``` in the ```Processing Toolbox``` and choose ```statistics by category```. 
-* In the resulting dialog, choose the newly created join layer as input layer; choose the estimated yield as the field to calculate statistics on (this should be numeric). 
+* In the resulting dialog, choose the *newly created join layer* as input layer; choose the *estimated yield* as the field to calculate statistics on (this should be numeric). 
 * Click on the dots next to the box for ```Field(s) with categories``` and tick ```maincrop``` and ```sex```. Click ```Run```. The output would be seen in the Layers panel as a table. Right-click on it ````--> Open Attribute Table```` and view the result, which shows estimated yield statistics by sex and main crop. The count field is the same as frequency. * To save the temporary group statistics layer, right-click and choose make permanent (or export). 
 * Save your project.
 
