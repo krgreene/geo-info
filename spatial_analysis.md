@@ -304,12 +304,14 @@ Ensure that the ```Match the extent of the clipped raster to the extent of the m
 * Click Run.
 * Make the output or result permanent by exporting it as a ```Geotiff```. 
 * After saving the clipped layers, remove the temporary clipped layers and the original land use/cover layers. You may as well remove the coastline layer. 
-* Colour the clipped layers by assigning the land use/cover classes obtainable from the metadata at this link: [https://www.arcgis.com/home/item.html?id=cfcb7609de5f478eb7666240902d4d3d](https://www.arcgis.com/home/item.html?id=cfcb7609de5f478eb7666240902d4d3d){:target="_blank"}
+* Colour the clipped layers by assigning the land use/cover classes obtainable from the Class Definitions table below.
 * Double-click one of the clipped layers to open the property window. 
 * Click the ```Symbology``` tab. 
     * Render type = Paletted/Unique values; 	
     * Click Classify at the bottom left to see the classes and labels. 
     * Under ```label```, double click on a class number and type in the right name obtained from the metadata. The class numbers are below:
+
+**Class definitions table**
 
 **Class (Value)** | **Name** | **Description**
 1	| Water | Areas where water was predominantly present throughout the year; may not cover areas with sporadic or ephemeral water; contains little to no sparse vegetation, no rock outcrop nor built up features like docks; examples: rivers, ponds, lakes, oceans, flooded salt plains.
@@ -321,6 +323,8 @@ Ensure that the ```Match the extent of the clipped raster to the extent of the m
 9	| Snow/ice| Large homogenous areas of permanent snow or ice, typically only in mountain areas or highest latitudes; examples: glaciers, permanent snowpack, snow fields.
 10	| Clouds | No land cover information due to persistent cloud cover.
 11	| Rangeland | Open areas covered in homogenous grasses with little to no taller vegetation; wild cereals and grasses with no obvious human plotting (i.e., not a plotted field); examples: natural meadows and fields with sparse to no tree cover, open savanna with few to no trees, parks/golf courses/lawns, pastures. Mix of small clusters of plants or single plants dispersed on a landscape that shows exposed soil or rock; scrub-filled clearings within dense forests that are clearly not taller than trees; examples: moderate to sparse cover of bushes, shrubs and tufts of grass, savannas with very sparse grasses, trees or other plants.
+
+Credit: [Sentinel-2 10m Land Use/Land Cover Time Series](https://www.arcgis.com/home/item.html?id=cfcb7609de5f478eb7666240902d4d3d){:target="_blank"}
 
 Change colours of the layers: Once the class labels are assigned, you can double-click individual colours beside the labels and change them to suit your preference. 
 
