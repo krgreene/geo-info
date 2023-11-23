@@ -17,7 +17,7 @@ On this page:
 
 ## Introduction
 
-A **database** is a collection of structured data on a computer system which is usually manipulated by **database management system (DBMS)** software. The DBMS allows editing and **querying** the database to produce the desired information. A **geodatabase** or **spatial database** is a special type of database for storing geographic or spatial data. This type of data includes geographic coordinates, such as latitude and longitude, and the geodatabase can store geometry parameters such as points, polygons and lines. The geodatabase also allows special functions such as spatial queries, e.g. finding features which are close to a point or enclosed within a polygon, and several over spatial functions.
+A **database** is a collection of structured data on a computer system which is usually manipulated by **database management system (DBMS)** software. The DBMS allows editing and **querying** the database to produce the desired information. A **geodatabase** or **spatial database** is a special type of database for storing geographic or spatial data. This type of data includes geographic coordinates, such as latitude and longitude, and the geodatabase can store geometry parameters such as points, polygons and lines. The geodatabase also allows special functions such as spatial queries, e.g. finding features which are close to a point or enclosed within a polygon, and several other spatial functions.
 
 The data in a database is normally arranged in tables, represented as rows and columns. A row represents a **record** which is all the data related to an **entity**, e.g.
 

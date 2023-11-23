@@ -12,6 +12,8 @@ On this page:
 
 # Spatial Analysis
 
+[Esri Land Cover](https://livingatlas.arcgis.com/landcover/){:target="_blank"}
+
 Download the zip file and extract the contents to your project folder.
 
 [Download datasets]({{site.url}}/assets/files/datasets.zip)
@@ -275,3 +277,99 @@ Output column prefix = ELEV_
 * Click ```Run```. 
 * Open the Farmcentroids attribute table and check the last column or field to see the extracted elevation values for the farm locations. 
 You may use the ```Identify tool``` to explore the elevations of a few farms.
+
+## Zonal Statistics
+
+* Add the Void_filled DEM raster data. You can reproject (warp) to WGS84 / UTM Zone 20N. 
+* Add the Parish layer you used previously to the map. 
+* In the ```Processing toolbox```, search for ‘zonal’ and choose ```Zonal statistics```. 
+    * Input layer: parishes;	
+    * Raster layer: DEM;		
+    * Output column prefix: ELEV_
+    * Statistics to calculate: click the 3 dots and choose Mean, Minimum, Maximum
+* You may choose to save the Zonal statistics output layer. 
+* Click Run.
+* Open the attribute table of the resulting zonal statistics output layer and look for the statistics calculated (in the last columns, with the prefix **ELEV_**).
+
+## Zonal Histogram
+
+For each Dominica parish, you will calculate zonal histogram to summarize the pixel count of each land cover/use class in the ESRI land cover/use layers for the 2018 and 2022.
+
+First, clip the land cover/use layer with the coastline layer. 
+
+* In the ```Processing toolbox```, search for ‘clip’ and choose ```Clip raster by mask layer``` under the GDAL (Raster extraction) function. 
+*  Input layer = land use/cover raster.
+Mask layer  = coastline. 
+Ensure that the ```Match the extent of the clipped raster to the extent of the mask layer``` is checked.
+* Click Run.
+* Make the output or result permanent by exporting it as a ```Geotiff```. 
+* After saving the clipped layers, remove the temporary clipped layers and the original land use/cover layers. You may as well remove the coastline layer. 
+* Colour the clipped layers by assigning the land use/cover classes obtainable from the metadata at this link: [https://www.arcgis.com/home/item.html?id=cfcb7609de5f478eb7666240902d4d3d](https://www.arcgis.com/home/item.html?id=cfcb7609de5f478eb7666240902d4d3d){:target="_blank"}
+* Double-click one of the clipped layers to open the property window. 
+* Click the ```Symbology``` tab. 
+    * Render type = Paletted/Unique values; 	
+    * Click Classify at the bottom left to see the classes and labels. 
+    * Under ```label```, double click on a class number and type in the right name obtained from the metadata. The class numbers are below:
+
+**Class (Value)** | **Name** | **Description**
+1	| Water | Areas where water was predominantly present throughout the year; may not cover areas with sporadic or ephemeral water; contains little to no sparse vegetation, no rock outcrop nor built up features like docks; examples: rivers, ponds, lakes, oceans, flooded salt plains.
+2	| Trees | Any significant clustering of tall (~15 feet or higher) dense vegetation, typically with a closed or dense canopy; examples: wooded vegetation, clusters of dense tall vegetation within savannas, plantations, swamp or mangroves (dense/tall vegetation with ephemeral water or canopy too thick to detect water underneath).
+4	| Flooded vegetation | Areas of any type of vegetation with obvious intermixing of water throughout a majority of the year; seasonally flooded area that is a mix of grass/shrub/trees/bare ground; examples: flooded mangroves, emergent vegetation, rice paddies and other heavily irrigated and inundated agriculture.
+5	| Crops | Human planted/plotted cereals, grasses, and crops not at tree height; examples: corn, wheat, soy, fallow plots of structured land.
+7	| Built area | Human made structures; major road and rail networks; large homogenous impervious surfaces including parking structures, office buildings and residential housing; examples: houses, dense villages / towns / cities, paved roads, asphalt.
+8	| Bare ground | Areas of rock or soil with very sparse to no vegetation for the entire year; large areas of sand and deserts with no to little vegetation; examples: exposed rock or soil, desert and sand dunes, dry salt flats/pans, dried lake beds, mines.
+9	| Snow/ice| Large homogenous areas of permanent snow or ice, typically only in mountain areas or highest latitudes; examples: glaciers, permanent snowpack, snow fields.
+10	| Clouds | No land cover information due to persistent cloud cover.
+11	| Rangeland | Open areas covered in homogenous grasses with little to no taller vegetation; wild cereals and grasses with no obvious human plotting (i.e., not a plotted field); examples: natural meadows and fields with sparse to no tree cover, open savanna with few to no trees, parks/golf courses/lawns, pastures. Mix of small clusters of plants or single plants dispersed on a landscape that shows exposed soil or rock; scrub-filled clearings within dense forests that are clearly not taller than trees; examples: moderate to sparse cover of bushes, shrubs and tufts of grass, savannas with very sparse grasses, trees or other plants.
+
+Change colours of the layers: Once the class labels are assigned, you can double-click individual colours beside the labels and change them to suit your preference. 
+
+* Try changing the colour of one class, click Apply to see how it looks like on the map. Complete the styling of the map. 
+* You can save the style to use in the future. At the lower left of the property dialog, click ```Style --> Save Style``` and browse to save it at a desired location. 
+* To use the saved style on a different layer, open the property dialog of the layer to be styled, click ```Style --> Load style``` and browse to the saved style. 
+
+Alternatively, you can click OK in the current property dialog to exit. You can then copy the style:
+
+* Right-click the stylized layer --> ```Copy style```. 
+* Then, right-click the other layer --> ```Paste style```. Explore the maps for accuracy based on your local knowledge.  
+* Add the parishes layer. In the ```Processing toolbox```, search for ‘zonal histogram’.  
+    * Raster layer = one of the land use/cover layers.
+    * Vector layer containing zones = Parishes. 
+    * Leave the rest as default. 
+* Click Run. 
+* Open the output table of the result, look for the columns with ```HISTO_``` as the suffix to see the number of pixels (or pixel count) for each land use/cover class in each parish. 
+* Calculate area of crop: 
+    * Check the pixel size of the land use/cover layer under the information tab in the properties dialog. Note that it is 10 m. Confirm this information with the metadata of the land use/cover layer. 
+        * Go to ```Project --> Properties --> General``` tab. Ensure that the units for area measurement is in meters. Close the project property dialog. 
+
+The land use/cover class 5 denotes crops. Let’s calculate the area of crops in each parish. 
+
+* Click on the ```Field Calculator``` on the toolbar of the attribute table. 
+* Ensure that the ```Create a new field is checked```. 
+* Name the new field **CropArea** 
+    * Datatype = Decimal number
+    * Field length = 10
+    * Precision = 2 
+    * In the expression box, multiply the ```HISTO_5``` field by 10 by 10 (the cell area of the land use/cover layer as seen from the metadata). Your expression should look like:
+> ```“HISTO_5” * 10 * 10```
+* Click OK to evaluate the expression. 
+* Check the result in the attribute table (note that the area is in square meters). 
+
+Explore the results. 
+
+* Which parish has the largest/smallest crop area? 
+* Compute area of trees and indicate which parishes have the largest/smallest area of trees. 
+
+You can also map the parishes based on any of the attributes (e.g. crop area or number of trees).
+
+Raster Calculator: you can use the raster Calculator to apply mathematical functions to one or more raster layers. Here, you will multiply the 2022 layer by 10 or 100. 
+
+* In the ```Processing toolbox```, search for calculator and choose ```Raster calculator```. 
+* In the dialog box, double-click on the 2022 raster layer to add it to the expression box. 
+* Click * to add to the box and type 10 (or 100, whichever you prefer) into the box. 
+* Scroll down to set the cell size or the layer from which cell size and CRS should be obtained. 
+* Click Run.  
+
+Examine the output to note the cell values have changed but the data (map) itself is not changed. This is simply a reclassification. 
+
+-----
