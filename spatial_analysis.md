@@ -242,6 +242,8 @@ Because the Rivers layer is large (covers the whole country), you will clip it t
 
 ## Select by location
 
+[ppd_rivers dataset]({{site.url}}/assets/files/rivers.zip)
+
 * On the menu bar, go to ```Vector > Research Tools > Select By Location```. 
 Complete the following:
 ```Select Features from```: Farms with the attribute joined (the polygon layer),
