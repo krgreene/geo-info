@@ -19,20 +19,12 @@ Strategic and operational management of national agriculture requires several sp
 ## Topics
 
 The course will introduce the following topics:
+
 * Introduction to GIS
 * Capturing and creating data
 * Geographic and projected coordinate systems
-* Geodatabases
+* Spatial databases
 * Spatial analysis and visualization
-
-<!-- Details of each topic are shown below:
-
-|Day | Topics | Activities | Outcomes |
-| 1 | Introduction | Introduction to QGIS interface, GIS data models and structures | Participants are familiar with QGIS interface and key tools, can load and interact with vector/raster data, change symbology, open attribute table, create layouts and print maps. |
-| 2 | Capturing/creating data | On-screen digitizing | Participants are able to digitize features from scanned map and Google Earth (convert between kml/kmz/shapefile), import GPS data to shapefile, update attribute table, convert between raster and vector data. |
-| 3 | Project and reproject data |  Participants are able to identify the coordinate system of a layer, distinguish between GCS and PCS, assign and transform coordinate systems to a layer and georeference an image. |
-| 4 | Geodatabases |  Create and populate geodatabases | Participants understand key concepts of relational databases and are able to create, populate and edit geodatabases. |
-| 5 | Spatial analysis and visualization | Undertake basic spatial analysis | Participants understand the main categories of spatial analysis, are able to design analytical steps to solve a spatial problem using vector or raster data and visualize the analytical output. -->
 
 ## Software requirements
 
@@ -48,7 +40,13 @@ The course will introduce the following topics:
 
 [ArcGIS Hub](https://hub.arcgis.com/){:target="_blank"}
 
+[Esri Land Cover](https://livingatlas.arcgis.com/landcover/){:target="_blank"}
+
 <!-- ## File upload
 
 [Upload your maps and other output files here.](https://theuwi-my.sharepoint.com/:f:/g/personal/20006608_cavehill_uwi_edu/ElKU_5tX4uhKlczax-N8P3IB7wTOpCZCV1aZYLazyxpXpA){:target="_blank"} -->
+
+## Feedback
+
+[Use this form to get assistance with GIS matters.](https://forms.office.com/Pages/ResponsePage.aspx?id=KupABOviREat2LyPNxBbYZ0Y912HOQFAiNTRQoyAfCdUN0VJTTJaUUZKMlZHVUhaUTVTVE5LRk81Vy4u){:target="_blank"}
 
