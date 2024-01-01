@@ -5,6 +5,6 @@ theme: just-the-docs
 url: https://krgreene.github.io/geo-info
 
 aux_links:
-  # Download as PDF: https://krgreene.github.io/geo-info/assets/Geo-informatics-for-Agriculture.pdf
+  Download as PDF: https://krgreene.github.io/geo-info/assets/dominica_gis_manual_2023.pdf
 
 favicon_ico: "/assets/gis_favicon.png"
